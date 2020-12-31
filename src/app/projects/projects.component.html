@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container"
+       style="justify-content: center; align-content: center; text-align: center; padding-bottom: 10px">
+    all my <strong>open source</strong> projects are hosted on <a href="https://github.com/stav121">github</a>.
+  </div>
+  <app-git [isLoading]="isi3wmthemerLoading"
+           [project]="i3wmthemer"
+           [projectName]="'i3wm-themer'">
+  </app-git>
+  <app-git [isLoading]="isTaskletLoading"
+           [projectName]="'tasklet'"
+           [project]="tasklet">
+  </app-git>
+  <app-git [isLoading]="isGmailGeneratorLoading"
+           [projectName]="'gmail-generator'"
+           [project]="gmailGenerator">
+  </app-git>
+  <app-git [isLoading]="warcParserLoading"
+           [projectName]="'warc-parser'"
+           [project]="warcParser">
+  </app-git>
+  <app-git [isLoading]="warcSeLoading"
+           [projectName]="'warc-se'"
+           [project]="warcSe">
+  </app-git>
+  <app-git [isLoading]="tripaLoading"
+           [projectName]="'tripa'"
+           [project]="tripa">
+  </app-git>
+  <hr>
+  <div class="container"
+       style="justify-content: center; align-content: center; text-align: center; padding-bottom: 10px">
+    <a href="https://github.com/stav121?tab=repositories">...and much more!</a>
+  </div>
+</div>

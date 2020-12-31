@@ -1,0 +1,35 @@
+<hr>
+<div class="row" style="justify-content: center; align-content: center;" *ngIf="isLoading">
+  <div class="col-1">
+    <p-progressSpinner [style]="{width: '20px', height: '20px'}"
+                       styleClass="custom-spinner"
+                       strokeWidth="8"
+                       animationDuration=".5s">
+    </p-progressSpinner>
+  </div>
+  <div class="col">
+    <strong>{{projectName}}</strong>
+  </div>
+</div>
+<div class="row" *ngIf="!isLoading">
+  <div class="col-lg-8">
+    <strong><a href="{{project.html_url}}">{{project.name}}</a></strong>
+  </div>
+  <div class="col">
+    <i class="fa fa-star"></i>
+    {{project.stargazers_count}}
+  </div>
+  <div class="col">
+    <i class="fa fa-code-fork"></i>
+    {{project.forks}}
+  </div>
+</div>
+<div class="row" *ngIf="!isLoading" style="padding-top: 10px">
+  <div class="col-lg-8">
+    {{project.description}}
+  </div>
+  <div class="col">
+    <i class="fa fa-balance-scale"></i>
+    {{project.license.name}}
+  </div>
+</div>

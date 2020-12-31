@@ -1,0 +1,15 @@
+<app-header (toggleVisibleComponent)="toggleVisibleComponent($event)">
+</app-header>
+<div *ngIf="this.visibleComponent==='home'"
+     class="site-component">
+  <app-home></app-home>
+</div>
+<div *ngIf="this.visibleComponent==='projects'"
+     class="site-component">
+  <app-projects></app-projects>
+</div>
+<div *ngIf="this.visibleComponent==='contact'"
+     class="site-component">
+  <app-contact></app-contact>
+</div>
+<app-footer></app-footer>
